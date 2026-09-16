@@ -15,8 +15,16 @@ jobs:
         node-version: lts/*
     - name: Install dependencies
       run: npm ci
+    - name: Debug env vars
+      env:
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+      run: |
+      echo "Username length: ${#username}"
+      echo "Password length: ${#password}"
+
     - name: Run Playwright tests
-      env : 
+      env: 
           username : ${{secrets.USERNAME}}
           password : ${{secrets.PASSWORD}}
       run: npx playwright test
