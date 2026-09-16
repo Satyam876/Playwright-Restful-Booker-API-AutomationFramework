@@ -1,0 +1,11 @@
+{
+    "firstname" : "Satyam",
+    "lastname" : "Kumar",
+    "totalprice" : 8000,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2026-10-15",
+        "checkout" : "2026-10-17"
+    },
+    "additionalneeds" : "Early Checkin"
+}
