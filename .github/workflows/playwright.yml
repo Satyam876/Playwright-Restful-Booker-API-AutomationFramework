@@ -20,8 +20,8 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
       run: |
-      echo "Username length: ${#username}"
-      echo "Password length: ${#password}"
+        echo "Username length: ${#username}"
+        echo "Password length: ${#password}"
 
     - name: Run Playwright tests
       env: 
